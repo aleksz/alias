@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="eng">
+		<item>Cat</item>
+		<item>Dog</item>
+		<item>House</item>
+		<item>Car</item>
+		<item>Eclipse</item>
+		<item>Road</item>
+		<item>Red ball</item>
+		<item>Sunny day</item>
+	</array>
+</resources>
