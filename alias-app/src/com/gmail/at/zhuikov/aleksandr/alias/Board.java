@@ -1,6 +1,7 @@
 package com.gmail.at.zhuikov.aleksandr.alias;
 
 import com.gmail.at.zhuikov.aleksandr.alias.domain.Game;
+import com.gmail.at.zhuikov.aleksandr.alias.domain.PlayerPair;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,8 +19,8 @@ public class Board extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.board);
-        game = new Game();
-        game.addPlayer("red");
+        game = new Game(1);
+        game.getPlayerPairs().add(new PlayerPair(1, game, "red", 0));
         stats = (TextView) findViewById(R.id.statistics);
         stats.setText(game.toString());
     }

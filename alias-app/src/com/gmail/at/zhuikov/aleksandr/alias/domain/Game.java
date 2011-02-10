@@ -8,14 +8,19 @@ public class Game implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	private long id;
 	private final Set<PlayerPair> playerPairs = new HashSet<PlayerPair>();
+
+	public Game(long id) {
+		this.id = id;
+	}
+
+	public long getId() {
+		return id;
+	}
 
 	public Set<PlayerPair> getPlayerPairs() {
 		return playerPairs;
-	}
-
-	public void addPlayer(String color) {
-		playerPairs.add(new PlayerPair(color));
 	}
 
 	@Override

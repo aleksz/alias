@@ -7,11 +7,20 @@ public class PlayerPair implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private final String color;
+	private long id;
+	private Game game;
+	private final String color;//replace it with int?
 	private int score;
 
-	public PlayerPair(String color) {
+	public PlayerPair(long id, Game game, String color, int score) {
+		this.id = id;
+		this.game = game;
 		this.color = color;
+		this.score = score;
+	}
+
+	public long getId() {
+		return id;
 	}
 
 	public String getColor() {
@@ -20,6 +29,10 @@ public class PlayerPair implements Serializable {
 
 	public int getScore() {
 		return score;
+	}
+
+	public Game getGame() {
+		return game;
 	}
 
 	@Override
