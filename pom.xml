@@ -36,7 +36,7 @@
 				<configuration>
 					<sdk>
 						<path>${env.ANDROID_HOME}</path>
-						<platform>2.3</platform>
+						<platform>9</platform>
 					</sdk>
 					<deleteConflictingFiles>true</deleteConflictingFiles>
 				</configuration>
