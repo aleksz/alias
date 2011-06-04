@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest package="com.gmail.at.zhuikov.aleksandr.alias"
-	android:versionCode="1" xmlns:android="http://schemas.android.com/apk/res/android"
-	android:versionName="1.0.0-SNAPSHOT">
-	<application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".Deck"
-                  android:label="@string/app_name">
-        </activity>
-        <activity android:name=".Board"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-	</application>
+<manifest package="com.gmail.at.zhuikov.aleksandr.alias" android:versionCode="1" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.0-SNAPSHOT">
+  <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <activity android:name="DeckActivity" android:label="@string/app_name"/>
+    <activity android:name="BoardActivity" android:label="@string/app_name"/>
+    <activity android:name=".GameActivity" android:label="@string/app_name"/>
+    <activity android:name="GameListActivity" android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <provider android:name=".domain.PlayerPairProvider" android:authorities="com.gmail.at.zhuikov.aleksandr.alias.domain.PlayerPairProvider"/>
+    <provider android:name=".domain.GameProvider" android:authorities="com.gmail.at.zhuikov.aleksandr.alias.domain.GameProvider"/>
+  </application>
 </manifest>

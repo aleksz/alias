@@ -2,4 +2,13 @@
 <resources>
     <string name="hello">Hello World, CardActivity!</string>
     <string name="app_name">Alias</string>
+    <string name="new_game">New game</string>
+    <string name="new_player_pair">New player pair</string>
+    <string name="player_pair_color_1">Blue</string>
+    <string name="player_pair_color_2">Red</string>
+    <string name="delete_player_pair">Delete</string>
+    <string name="edit_game">Edit</string>
+    <string name="delete_game">Delete</string>
+    <string name="delete_all_games">Delete all</string>
+    <string name="delete_all_player_pairs">Delete all player pairs</string>
 </resources>
