@@ -22,6 +22,10 @@ public class PlayerPair implements Serializable {
 		this.gameId = gameId;
 	}
 
+	public long getId() {
+		return id;
+	}
+
 	protected PlayerPair(long id, int color, int score, long gameId) {
 		this.id = id;
 		this.color = color;
@@ -35,10 +39,6 @@ public class PlayerPair implements Serializable {
 
 	public boolean isNew() {
 		return getId() == 0;
-	}
-
-	public long getId() {
-		return id;
 	}
 
 	protected void setId(long id) {
